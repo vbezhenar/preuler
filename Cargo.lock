@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "project-euler"
-version = "0.1.0"
+name = "preuler"
+version = "0.0.0"
