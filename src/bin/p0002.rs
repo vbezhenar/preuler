@@ -23,7 +23,8 @@ impl Iterator for FibonacciIterator {
 
     fn next(&mut self) -> Option<Self::Item> {
         let f = self.n0;
-        let n2 = self.n0.checked_add(self.n1).unwrap();
+        let n2_opt = self.n0.checked_add(self.n1);
+        let n2 = n2_opt.expect("next value is too large");
         self.n0 = self.n1;
         self.n1 = n2;
         return Some(f);
