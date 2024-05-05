@@ -1,5 +1,3 @@
-use std::ops::Add;
-
 pub struct FibonacciIterator {
     n0: u64,
     n1: u64,
