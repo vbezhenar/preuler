@@ -1,3 +1,3 @@
-mod fibonacci;
+mod fibonacci_iterator;
 
-pub use fibonacci::FibonacciIterator;
+pub use fibonacci_iterator::FibonacciIterator;
